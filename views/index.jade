@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  div#drop_zone.example Drop files here
+  h3 Upload Info
+  output#list
+  h3 Preview
+  div#preview
+
+  script(src='/javascripts/file.js')

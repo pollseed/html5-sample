@@ -1,0 +1,34 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#drop_zone {
+  border: 2px dashed #bbb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  font: 20pt bold 'Vollkorn';
+  color: #bbb;
+}
+
+.example {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+img.preview {
+  outline: 4px solid #364;
+  border: 1;
+  width: 500px;
+  height: 300px;
+}
