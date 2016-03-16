@@ -11,9 +11,8 @@ function handleFileSelect(evt) {
 
   for (let i = 0, f; f = files[i]; i++) {
     output.push(
-      '<li><strong>',
-      escape(f.name),
-      '</strong> (',
+      '<li>',
+      `<strong>${escape(f.name)}</strong> (`,
       f.type || 'n/a',
       ') - ',
       f.size,
@@ -26,7 +25,7 @@ function handleFileSelect(evt) {
     preview.appendChild(img);
 
     reader = new FileReader();
-    reader.onload = (function(aImg) { return function(e) {
+    reader.onload = (aImg => { return e => {
       aImg.src = e.target.result;
     };})(img);
     reader.readAsDataURL(f);
